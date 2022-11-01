@@ -13,18 +13,18 @@
 let counterValue = 0;
 
 const countId = document.querySelector("#counter");
-console.log(countId);
-console.log(countId.firstElementChild);
-console.log(countId.childNodes[3]);
+// console.log(countId);
+// console.log(countId.firstElementChild);
+// console.log(countId.childNodes[3]);
 
 const a = countId.firstElementChild.addEventListener("click", () => {
   counterValue -= 1;
   countId.childNodes[3].textContent = counterValue;
-  console.log("-1 next step");
+  // console.log("-1 next step");
 });
 
 const b = countId.lastElementChild.addEventListener("click", () => {
   counterValue += 1;
   countId.childNodes[3].textContent = counterValue;
-  console.log("+1 next step");
+  // console.log("+1 next step");
 });
