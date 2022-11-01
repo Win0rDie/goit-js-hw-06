@@ -5,3 +5,10 @@
 // <input type="text" id="name-input" placeholder="Please enter your name" />
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
+const output = document.getElementById('name-output');
+const inputText = document.getElementById('name-input'); 
+
+inputText.addEventListener("input", (event) => {
+    output.textContent = event.currentTarget.value;
+  });
+
